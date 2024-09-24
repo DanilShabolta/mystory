@@ -24,6 +24,15 @@ body {
     align-items: center;
 }
 
+.head-button {
+    color: rgba(73, 83, 103, 1);
+    transition: 0.3s;
+}
+
+.head-button:hover{
+    color: rgba(138, 83, 255, 1);
+}
+
 .image-overlay {
     position: relative;
     width: 24px;
@@ -133,7 +142,7 @@ nav a {
 .hero-watch-button {
     width: 165px;
     height: 46px;
-    background-color: #fff;
+    background: none;
     color: black;
     border: none;
     border-radius: 4px;
@@ -166,8 +175,18 @@ nav a {
 
 
 .featured, .adventures, .form-section {
+    display: flex;
+    padding-left: 104px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-right: 140px;
+    text-align: left;
+}
+
+.featured-textbox{
+    display: flex;
+    flex-direction: column;
     padding: 50px;
-    text-align: center;
 }
 
 .cards {

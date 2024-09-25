@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <div class="header-row">
         <div class="logo">
             <img src="./images/logo/talking.png" alt="talking">
             <img src="./images/logo/travel.png" alt="travel">
@@ -23,18 +24,21 @@
                     <img src="./images/header/profile-head.png" alt="head" class="profile-top-image"></a></div></li>
             </ul>
         </nav>
+        </div>
     </header>
 
     <section class="hero">
-        <div class="hero-text">
+        <div class="hero-content-container">
+            <div class="hero-texts">
             <p class="hero-title"><span class="hero-title-purple">Let's talk</span> about<br> your next trip!</p>
             <p class="hero-description">Share your favorite travel destination and we will<br>feature it in our next blog.</p>
-            <div class="hero-buttons"> <!-- Новый контейнер для кнопок -->
+        </div>
+            <div class="hero-buttons">
                 <button class="hero-share-button">Share your story</button>
-                <button class="hero-watch-button">
-                    <span class="hero-watch-icon-container">
-                        <img src="./images/play/Ellipse.png" alt="Icon 1" class="icon hero-watch-icon-1">
-                        <img src="./images/play/Polygon.png" alt="Icon 2" class="icon hero-watch-icon-2">
+                <button class="watch-button">
+                    <span class="watch-icon-container">
+                        <img src="./images/play/Ellipse.png" alt="Icon 1" class="icon watch-icon-1">
+                        <img src="./images/play/Polygon.png" alt="Icon 2" class="icon watch-icon-2">
                     </span>
                     Watch highlights
                 </button>  
@@ -46,33 +50,51 @@
     
 
     <section class="featured">
-        <img src="./images/Featured-Image.png" alt="Featured Image">
-        <div class="featured-textbox">
-            <p>FEATURED DESTINATION</p>
-            <h2>Our swiss adventure blog</h2>
-            <h3>Visiting the swiss alps? Want to know the requirements on travelling to Switzerland during the pandemic? Our blog might help!</h3>
-            <a href="#">Watch Now</a>
+        <div class="featured-image"></div>
+        <div class="featured-content">
+        <div class="featured-texts">
+            <p class="featured-category">FEATURED DESTINATION</p>
+            <h2 class="featured-title">Our swiss adventure blog</h2>
+            <h3>Visiting the swiss alps? Want to know the requirements on<br>
+                 travelling to Switzerland during the pandemic? Our blog might<br> 
+                 help!</h3>
+                 <button class="watch-button">
+                    <span class="watch-icon-container">
+                        <img src="./images/featured/Ellipse.png" alt="Icon 1" class="icon watch-icon-1">
+                        <img src="./images/featured/Polygon.png" alt="Icon 2" class="icon watch-icon-2">
+                    </span>
+                    Watch Now
+                </button>  
+                 
+        </div>
         </div>
     </section>
 
     <section class="adventures">
-        <h2>Discover the world with us</h2>
-        <div class="cards">
-            <div class="card">
+        <div class="adventures-texts">
+            <p class="adventures-category">JOIN OUR ADVENTURES</p>
+            <h2 class="adventures-title">Discover the world with us</h2>
+        </div>
+        <div class="adventures-cards">
+            <div class="adventures-card">
                 <img src="./images/Iceland.png" alt="Iceland">
                 <p>Iceland</p>
+                <h1 class="adventures-discover">Discover</h1>
             </div>
-            <div class="card">
+            <div class="adventures-card">
                 <img src="./images/Italy.png" alt="Italy">
                 <p>Italy</p>
+                <h1 class="adventures-discover">Discover</h1>
             </div>
-            <div class="card">
+            <div class="adventures-card">
                 <img src="./images/Dubai.png" alt="Dubai">
                 <p>Dubai</p>
+                <h1 class="adventures-discover">Discover</h1>
             </div>
-            <div class="card">
+            <div class="adventures-card">
                 <img src="./images/Patagonia.png" alt="Patagonia">
                 <p>Patagonia</p>
+                <h1 class="adventures-discover">Discover</h1>
             </div>
         </div>
     </section>

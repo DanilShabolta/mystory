@@ -13,20 +13,44 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 119px;
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+    gap: 10px;
+}
+
+.header-row {
+    width: 80%;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100px;
+    height: 64px;
 }
 
 .head-button {
     color: rgba(73, 83, 103, 1);
     transition: 0.3s;
+    align-items: flex-end;
 }
 
 .head-button:hover{
@@ -53,19 +77,11 @@ body {
     height: auto;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    padding-left: 119px;
-    padding-right: 119px;
-    background-color: #fff;
-    gap: 10px;
-}
-
 nav ul {
     list-style: none;
     display: flex;
+    padding: 0;
+    margin: 0;
     gap: 30px;
 }
 
@@ -81,8 +97,12 @@ nav a {
     align-items: center;
     background-image: url('./images/hero-image.png');
     background-size: cover;
-    padding: 200px;
+    background-position: center;
+    padding-top: 90px;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .hero::before {
@@ -92,28 +112,47 @@ nav a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 1) 100%);
     pointer-events: none;
 }
 
-
-.hero-text {
-    position: relative;
+.hero-content-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     z-index: 1;
     font-family: 'Changa One';
-    font-weight: 400px;
+    font-weight: 400;
     gap: 34px;
+    height: 580px;
+    width: 765px;
+    padding-left: 140px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 120px;
+}
+
+.hero-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    gap: 12px;
+    padding-left: 140px;
 }
 
 .hero-title {
-    font-size: 73px;
+    font-size: 70px;
     color: rgba(67, 67, 67, 1);
+    line-height: 84px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 0;
 }
 
 .hero-title-purple {
-    font-size: 73px;
+    font-size: 70px;
+    font-weight: 400;
     color: rgba(138, 83, 255, 1);
 }
 
@@ -121,11 +160,17 @@ nav a {
     font-size: 22px;
     font-family: 'Roboto';
     line-height: 36px;
+    text-align: left;
 }
 
 .hero-buttons {
     display: flex;
+    justify-content: left;
+    width: 100%;
+    gap: 24px;
+    padding-left: 140px;
 }
+
 
 .hero-share-button {
     position: relative;
@@ -139,7 +184,7 @@ nav a {
     border: none;
 }
 
-.hero-watch-button {
+.watch-button {
     width: 165px;
     height: 46px;
     background: none;
@@ -152,20 +197,25 @@ nav a {
     box-shadow: none;
     display: flex;
     align-items: center;
+    transition: 0.3s;
 }
 
-.hero-watch-icon-container {
+.watch-button:hover{
+    color: rgba(138, 83, 255, 1);
+}
+
+.watch-icon-container {
     display: inline-flex;
     position: relative;
     margin-right: 8px;
 }
 
-.hero-watch-icon {
+.watch-icon {
     width: 100%;
     height: 100%;
 }
 
-.hero-watch-icon-2 {
+.watch-icon-2 {
     position: absolute;
     width: 40%;
     height: 40%;
@@ -174,29 +224,124 @@ nav a {
 }
 
 
-.featured, .adventures, .form-section {
+.featured, .form-section {
     display: flex;
-    padding-left: 104px;
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-left: 140px;
     padding-right: 140px;
+    padding-top: 107px;
+    padding-bottom: 107px;
     text-align: left;
 }
 
-.featured-textbox{
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+.featured-image {
+    width: 580px;
+    height: 338px;
+    padding-right: 40px;
+    gap: 10px;
+    background-image: url(./images/Featured-Image.png);
+    border-radius: 8px;
+    overflow: hidden;
+    background-size: cover;
 }
 
-.cards {
+.featured-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 292px;
+    padding: 30px;
+    gap: 24px;
+}
+
+.featured-texts {
+    width: 100%;
+    height: 172px;
+    gap: 8px;
+}
+
+.featured-category {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    letter-spacing: 6%;
+    color: rgba(138, 83, 255, 1);
+}
+
+.featured-title {
+    font-family: "Changa One";
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 36px;
+    color: rgba(67, 67, 67, 1);
+}
+
+.featured-description {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: rgba(67, 67, 67, 1);
+}
+
+.adventures {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 621px;
+    padding-top: 24px;
+    padding-bottom: 70px;
+}
+
+.adventures-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 24px;
+    padding-left: 119px;
+    padding-bottom: 48px;
+    padding-right: 119px;
+}
+
+.adventures-category {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.09px;
+    letter-spacing: 6%;
+    color: rgba(138, 83, 255, 1);
+}
+
+.adventures-title{
+    font-size: 39px;
+    font-family: "Changa One";
+    line-height: 40px;
+    font-weight: 400;
+    color: rgba(67, 67, 67, 1);
+}
+
+.adventures-cards {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 16px;
 }
 
-.card {
-    max-width: 200px;
+.adventures-card {
+    max-width: 300px;
+    max-height: 410px;
+    text-align: center;
+    font-family: "Changa One";
+    font-size: 24px;
+    color: rgba(67, 67, 67, 1);
+}
+
+.adventures-discover {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 18.75px;
+    color: rgba(138, 83, 255, 1);
 }
 
 footer {

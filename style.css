@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 header {
@@ -125,11 +126,9 @@ nav a {
     font-weight: 400;
     gap: 34px;
     height: 580px;
-    width: 765px;
-    padding-left: 140px;
+    padding-left: 120px;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-right: 120px;
 }
 
 .hero-texts {
@@ -227,16 +226,16 @@ nav a {
 .featured, .form-section {
     display: flex;
     padding-left: 140px;
-    padding-right: 140px;
     padding-top: 107px;
     padding-bottom: 107px;
+    width: 100%;
+    max-width: 1440px;
     text-align: left;
 }
 
 .featured-image {
     width: 580px;
     height: 338px;
-    padding-right: 40px;
     gap: 10px;
     background-image: url(./images/Featured-Image.png);
     border-radius: 8px;
@@ -288,6 +287,7 @@ nav a {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 1440px;
     height: 621px;
     padding-top: 24px;
     padding-bottom: 70px;
@@ -298,7 +298,6 @@ nav a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 24px;
     padding-left: 119px;
     padding-bottom: 48px;
     padding-right: 119px;
@@ -344,11 +343,191 @@ nav a {
     color: rgba(138, 83, 255, 1);
 }
 
-footer {
-    background-color: #333;
-    color: black;
-    text-align: center;
-    padding: 10px;
+.share-section {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 74px;
+    margin-bottom: 117px;
+    width: 100%;
+    height: 50%;
+    background-image: url("./images/ShareTravel.svg");
 }
 
+.share-section-texts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
 
+.share-section-category {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.09px;
+    letter-spacing: 6%;
+    color: rgba(138, 83, 255, 1);
+}
+
+.share-section-title {
+    font-size: 39px;
+    font-family: "Changa One";
+    line-height: 40px;
+    font-weight: 400;
+    color: rgba(67, 67, 67, 1);
+    width: 100%;
+}
+
+.share-section-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 657px;
+    margin-top: 17px;
+    margin-left: 391.5px;
+    margin-right: 391.5px;
+    background-color: #fff;
+    padding-left: 30px;
+}
+
+.share-section-form input, textarea{
+    padding: 16px;
+    margin-bottom: 10px;
+    gap: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    width: 557px;
+    font-size: 16px;
+    font-family: "Roboto";
+    line-height: 24px;
+}
+
+.share-section-form button {
+    background-color: rgba(138, 83, 255, 1);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 222px;
+    height: 46px;
+}
+
+.recent-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 83px 120px;
+}
+
+.recent-texts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .recent-category {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.09px;
+    letter-spacing: 6%;
+    color: rgba(138, 83, 255, 1);
+}
+
+.recent-title {
+    font-size: 39px;
+    font-family: "Changa One";
+    line-height: 40px;
+    font-weight: 400;
+    color: rgba(67, 67, 67, 1);
+    width: 100%;
+}
+
+  .recent-stories {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .recent-story-left {
+    margin-top: 40px;
+    margin-left: 0;
+    width: 50%;
+    height: 80%;
+  }
+
+  .recent-story-left-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .recent-story-left-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .recent-story-left-text p {
+    font-family: "Changa One";
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: rgba(67, 67, 67, 1);
+}
+
+.recent-story-left-text h1 {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(87, 96, 116, 1);
+}
+  
+  .story-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .story-card-texts{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 0;
+    width: 358px;
+  }
+  
+  .story-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    border: none;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .story-card-texts p {
+    font-family: "Changa One";
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    color: rgba(67, 67, 67, 1);
+}
+
+.story-card-texts h1 {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(87, 96, 116, 1);
+}
+  
+  .story-card img {
+    width: 200px;
+    height: 128px;
+    object-fit: cover;
+  }

@@ -1,160 +1,253 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="header-row">
-        <div class="logo">
-            <img src="./images/logo/talking.png" alt="talking">
-            <img src="./images/logo/travel.png" alt="travel">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#" class="head-button">Home</a></li>
-                <li><a href="#" class="head-button">Story</a></li>
-                <li><a href="#" class="head-button">Gallery</a></li>
-                <li><a href="#" class="head-button">Contact Us</a></li>
-                <li><a href="#"><img src="./images/header/search.png" alt="search"></a></li>
-                <li><div class="image-overlay"><a href="#"><img src="./images/header/profile-body.png" alt="body" class="profile-bottom-image">
-                    <img src="./images/header/profile-head.png" alt="head" class="profile-top-image"></a></div></li>
-            </ul>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h1 class="logo">
+          <img src="./images/Header Logo.svg" alt="Sky Travel Logo" />
+        </h1>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Story</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+              <a href="#"
+                ><img src="./images//header/Header Search Icon.svg"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images//header/Header Profile.svg" /></a>
+            </li>
+          </ul>
         </nav>
-        </div>
+      </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content-container">
-            <div class="hero-texts">
-            <p class="hero-title"><span class="hero-title-purple">Let's talk</span> about<br> your next trip!</p>
-            <p class="hero-description">Share your favorite travel destination and we will<br>feature it in our next blog.</p>
-        </div>
-            <div class="hero-buttons">
-                <button class="hero-share-button">Share your story</button>
-                <button class="watch-button">
-                    <span class="watch-icon-container">
-                        <img src="./images/play/Ellipse.png" alt="Icon 1" class="icon watch-icon-1">
-                        <img src="./images/play/Polygon.png" alt="Icon 2" class="icon watch-icon-2">
-                    </span>
-                    Watch highlights
-                </button>  
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content container">
+            <h2>
+              <span style="color: #4a90e2">Let's</span> talk about <br />
+              your next trip!
+            </h2>
+            <p>
+              Share your favorite travel destination and we will<br />
+              feature it in our next blog!
+            </p>
+            <div class="button-container">
+              <a href="#" class="button-share">Share your story</a>
+              <a href="#" class="button-watch"
+                ><img src="/images/highligths.svg" />Watch highligths</a
+              >
             </div>
-        </div>
-    </section> 
-        </div>
-    </section>
-    
-
-    <section class="featured">
-        <div class="featured-image"></div>
-        <div class="featured-content">
-        <div class="featured-texts">
-            <p class="featured-category">FEATURED DESTINATION</p>
-            <h2 class="featured-title">Our swiss adventure blog</h2>
-            <h3>Visiting the swiss alps? Want to know the requirements on<br>
-                 travelling to Switzerland during the pandemic? Our blog might<br> 
-                 help!</h3>
-                 <button class="watch-button">
-                    <span class="watch-icon-container">
-                        <img src="./images/featured/Ellipse.png" alt="Icon 1" class="icon watch-icon-1">
-                        <img src="./images/featured/Polygon.png" alt="Icon 2" class="icon watch-icon-2">
-                    </span>
-                    Watch Now
-                </button>  
-                 
-        </div>
-        </div>
-    </section>
-
-    <section class="adventures">
-        <div class="adventures-texts">
-            <p class="adventures-category">JOIN OUR ADVENTURES</p>
-            <h2 class="adventures-title">Discover the world with us</h2>
-        </div>
-        <div class="adventures-cards">
-            <div class="adventures-card">
-                <img src="./images/Iceland.png" alt="Iceland">
-                <p>Iceland</p>
-                <h1 class="adventures-discover">Discover</h1>
-            </div>
-            <div class="adventures-card">
-                <img src="./images/Italy.png" alt="Italy">
-                <p>Italy</p>
-                <h1 class="adventures-discover">Discover</h1>
-            </div>
-            <div class="adventures-card">
-                <img src="./images/Dubai.png" alt="Dubai">
-                <p>Dubai</p>
-                <h1 class="adventures-discover">Discover</h1>
-            </div>
-            <div class="adventures-card">
-                <img src="./images/Patagonia.png" alt="Patagonia">
-                <p>Patagonia</p>
-                <h1 class="adventures-discover">Discover</h1>
-            </div>
-        </div>
-    </section>
-
-    <section class="share-section">
-        <form class="share-section-form">
-        <div class="share-section-texts">
-        <p class="share-section-category">LET'S BUILD A COMMUNITY</p>
-        <h2 class="share-section-title">Join our next destination</h2>
-        </div>
-            <h2>Share your travels</h2>
-            <p>Suggest a new travel destination that you want to see and we will<br> feature it in our blog.</p>
-            <input type="text" placeholder="Destination name">
-            <input type="text" placeholder="Country of Destination">
-            <input type="text" placeholder="Your name">
-            <textarea placeholder="Describe what kind of photos you want to focus on."></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <section class="recent-section">
-        <div class="recent-texts">
-            <p class="recent-category">CATCH UP TO OUR POSTS</p>
-            <h2 class="recent-title">Recent story entries</h2>
-        </div>
-        <div class="recent-stories">
-        <div class="recent-story-left">
-            <img src="./images/story/image1.svg" alt="Zermatt, Switzerland">
-            <div class="recent-story-left-content">
-            <div class="recent-story-left-text">
-                <p>Zermatt, Switzerland</p>
-                <h1>Marvel on the beauty of the iconic Matterhorn. Find the best<br> places to stay that has the best views of this peak...</h1>
-            </div>
-            </div>
-        </div>
-        <div class="story-cards">
-          <div class="story-card">
-            <img src="./images/story/image2.svg" alt="Tuscany, Italy">
-            <div class="story-card-texts">
-            <p>Tuscany, Italy</p>
-            <h1>The amazing Tuscany is home to famous<br> Renaissance art and architecture and a vast<br> scenic landscape. view full blog...</h1>
           </div>
-          </div>
-          <div class="story-cards">
-            <div class="story-card">
-              <img src="./images/story/image3.svg" alt="Kyoto, Japan">
-              <div class="story-card-texts">
-              <p>Kyoto, Japan</p>
-              <h1>Kyoto is well known for its temples, gardens, Shinto shrines and wooden houses. It’s time to visit tokyo. view full blog...</h1>
-            </div>
-            </div>
-            <div class="story-cards">
-                <div class="story-card">
-                  <img src="./images/story/image4.svg" alt="Lofoten Islands, Norway">
-                  <div class="story-card-texts">
-                  <p>Lofoten Islands, Norway</p>
-                  <h1>Featuring razor-sharp peaks housing the arctic landscape. This astonishing island is perfect for your next postcard.  view full blog...</h1>
-                </div>
-                </div>
-          </div>
+        </div>
       </section>
-</body>
+
+      <section class="featured-destination">
+        <div class="container-featured">
+          <img
+            class="featured-img"
+            src="./images/Featured-Image.png"
+            alt="Swiss Adventure"
+          />
+          <div class="featured-content">
+            <h3>Featured Destination</h3>
+            <p>Our Swiss adventure blog</p>
+            <h4>
+              Discover the beauty of Switzerland! Skiing the Matterhorn? Don’t
+              miss out!
+            </h4>
+            <a href="#" class="button"
+              ><img src="./images/watch now.svg" /> Watch Now</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="adventures">
+        <div class="container">
+          <p>JOIN OUR ADVENTURES</p>
+          <h1>Discover the world with us</h1>
+          <div class="grid">
+            <div class="grid-item">
+              <img src="./images/Iceland.png" alt="Iceland" />
+              <h2>Iceland</h2>
+              <a href="#">Discover</a>
+            </div>
+            <div class="grid-item">
+              <img src="./images/italy.png" alt="Italy" />
+              <h2>Italy</h2>
+              <a href="#">Discover</a>
+            </div>
+            <div class="grid-item">
+              <img src="./images/dubai.png" alt="Dubai" />
+              <h2>Dubai</h2>
+              <a href="#">Discover</a>
+            </div>
+            <div class="grid-item">
+              <img src="./images/patagonia.png" alt="Patagonia" />
+              <h2>Patagonia</h2>
+              <a href="#">Discover</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="signup">
+        <div class="container-signup">
+          <p>LET'S BUILD A COMMUNITY</p>
+          <h1>Join our next destination</h1>
+          <h2>Share your travels</h2>
+          <h3>
+            Suggest a new travel destination that you want to see and we will<br />
+            feature it in our blog.
+          </h3>
+          <form>
+            <datalist id="countries">
+              <option value="Switzerland"></option>
+              <option value="Japan"></option>
+              <option value="Norway"></option>
+              <option value="Italy"></option>
+            </datalist>
+
+            <datalist id="categories">
+              <option value="Nature"></option>
+              <option value="Urban"></option>
+              <option value="Wildlife"></option>
+              <option value="Portrait"></option>
+            </datalist>
+
+            <input
+              type="text"
+              id="destination"
+              name="destination"
+              placeholder="Destination name"
+              required
+            />
+
+            <input
+              list="countries"
+              type="choose"
+              id="country"
+              name="country"
+              placeholder="Country of Destination"
+              required
+            />
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+
+            <input
+              list="categories"
+              type="text"
+              id="category"
+              name="category"
+              placeholder="Shooting category"
+            />
+
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Describe what kind of photos you want to focus on"
+            ></textarea>
+
+            <button type="submit" class="button">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="container">
+          <p>catch up to our posts</p>
+          <h3>Recent story entries</h3>
+          <div class="grid">
+            <div class="grid-item-main">
+              <img
+                src="./images/story/zermatt.svg"
+                alt="Zermatt, Switzerland"
+              />
+              <div class="item-main-row">
+                <div class="item-main-collumn">
+                  <h3>Zermatt, Switzerland</h3>
+                  <h4>
+                    Marvel on the beauty of the iconic Matterhorn. Find the
+                    best<br />
+                    places to stay that has the best views of this peak...
+                  </h4>
+                </div>
+                <a href="#"
+                  ><img class="img-button" src="./images/watch now.svg"
+                /></a>
+              </div>
+            </div>
+            <div class="grid-collumn">
+              <div class="grid-item">
+                <img src="./images/story/tuscany.svg" alt="Tuscuny, Italy" />
+                <div class="item-collumn">
+                  <h3>Tuscany, Italy</h3>
+                  <p>
+                    The amazing Tuscany is home to famous<br />
+                    Renaissance art and architecture and a vast<br />
+                    scenic landscape. <span> view full blog...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img src="./images/story/kyoto.svg" alt="Kyoto, Japan" />
+                <div class="item-collumn">
+                  <h3>Kyoto, Japan</h3>
+                  <p>
+                    Kyoto is well known for its temples, gardens,<br />
+                    Shinto shrines and wooden houses. It’s time to<br />
+                    visit tokyo. <span> view full blog...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img
+                  src="./images/story/lofoten.svg"
+                  alt="Lofoten Islands, Norway"
+                />
+                <div class="item-collumn">
+                  <h3>Lofoten Islands, Norway</h3>
+                  <p>
+                    Featuring razor-sharp peaks housing the arctic<br />
+                    landscape. This astonishing island is perfect for<br />
+                    your next postcard. <span> view full blog...</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container-footer">
+        <p>&copy; 2022, Talking Travel. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Gallery</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

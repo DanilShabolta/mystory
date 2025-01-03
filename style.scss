@@ -1,0 +1,587 @@
+$primary-color: #4a90e2;
+$secondary-color: #7b7b7b;
+$background-color: #f9f9f9;
+$text-color: #434343;
+
+@font-face {
+  font-family: "Changa One";
+  src: url("./fonts/ChangaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 13px 119px;
+  height: 90px;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+        color: $text-color;
+        font-weight: bold;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .logo img {
+    width: 100px;
+  }
+}
+
+//hero
+
+.hero {
+  display: flex;
+  align-items: left;
+  background: linear-gradient(
+      90deg,
+      #ffffff -0.92%,
+      rgba(255, 255, 255, 0) 75.6%
+    ),
+    url("./images/hero-image.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 580px;
+  margin-left: 140px;
+  margin-top: 124px;
+
+  .hero-content {
+    max-width: 100%;
+    padding-left: 0px;
+    padding-top: 40px;
+
+    h2 {
+      font-size: 73px;
+      margin-bottom: 20px;
+      color: $text-color;
+      line-height: 84px;
+      font-weight: 400;
+      letter-spacing: -1%;
+      font-family: "Changa One";
+      color: $text-color;
+
+      span {
+        color: $primary-color;
+      }
+    }
+
+    p {
+      font-family: "Roboto";
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: left;
+      margin-bottom: 20px;
+      color: $text-color;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+
+      .button-share {
+        background-color: #8a53ff;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        height: 46px;
+        width: 165px;
+        border-radius: 4px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+      .button-watch {
+        background: transparent;
+        color: $text-color;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        height: 46px;
+        width: 165px;
+        border-radius: 4px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+}
+
+//featured destination
+
+.featured-destination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0;
+  margin-left: 140px;
+  margin-top: 107px;
+
+  .container-featured {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .featured-img {
+    width: 100%;
+    max-width: 580px;
+    border-radius: 10px;
+  }
+
+  .featured-content {
+    max-width: 50%;
+    padding-left: 40px;
+
+    h3 {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.09px;
+      letter-spacing: 0.06em;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #8a53ff;
+    }
+
+    p {
+      font-family: Changa One;
+      font-size: 39px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $text-color;
+    }
+
+    h4 {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 33px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: $text-color;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      background: transparent;
+      color: #8a53ff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 33px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+//adventures
+
+.adventures {
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #8a53ff;
+  }
+
+  .grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .grid-item {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 100%;
+        max-width: 268px;
+        max-height: 317px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-family: Changa One;
+        font-size: 39px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: $text-color;
+      }
+
+      a {
+        color: #8a53ff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//signup
+.signup {
+  .container-signup {
+    width: 90%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  background-image: url("./images/ShareTravel.svg");
+  padding: 50px 0;
+  text-align: center;
+  p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #8a53ff;
+  }
+
+  h1 {
+    font-family: Changa One;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $text-color;
+  }
+
+  h2 {
+    font-family: Changa One;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $text-color;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #576074;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      width: 100%;
+      max-width: 500px;
+      height: 56px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 0 12px;
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      height: 72px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 0 12px;
+    }
+
+    .button {
+      align-self: flex-start;
+      width: 222px;
+      height: 46px;
+      margin-top: 20px;
+      background: #8a53ff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background: $secondary-color;
+      }
+    }
+  }
+}
+
+//blog
+.blog {
+  text-align: center;
+  padding: 0 0;
+
+  p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #8a53ff;
+  }
+
+  h3 {
+    font-family: Changa One;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $text-color;
+  }
+
+  .grid {
+    display: flex;
+    align-items: center;
+    .grid-item-main {
+      width: 50%;
+      text-align: left;
+      background: #fff;
+      padding: 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 100%;
+        max-width: 560px;
+        max-height: 358px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        margin-top: 14px;
+        font-family: Changa One;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+
+      h4 {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+
+      .item-main-row {
+        width: 100%;
+        max-width: 580px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .img-button {
+          width: 48px;
+          height: 48px;
+          margin-left: auto;
+          align-self: flex-end;
+        }
+      }
+    }
+
+    .grid-item {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      text-align: left;
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      .item-collumn {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+
+        h3 {
+          font-family: Changa One;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 36px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: $text-color;
+        }
+
+        p {
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: #576074;
+        }
+      }
+
+      img {
+        width: 100%;
+        width: 200px;
+        height: 128px;
+        border-radius: 4px;
+        padding-top: 30px;
+      }
+    }
+  }
+}
+
+//footer
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  .container-footer {
+    width: 100%;
+    margin: 32px 120px 32px 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+      align-self: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    a {
+      text-decoration: none;
+      align-self: center;
+    }
+  }
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background: transparent;
+  color: #939eb4;
+  text-align: center;
+}
